@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayActivity">
+    tools:context=".commentActivity">
 
     <TextView
         android:id="@+id/tvPostTitle"
@@ -31,4 +31,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPostTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvcomments"
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostBody"
+        tools:listitem="@layout/comment_list_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

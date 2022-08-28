@@ -6,7 +6,7 @@ data class Post(
     var title: String,
     var body : String
 )
- data class comment (
+ data class Comment (
      var postId : Int,
      var id : Int,
      var name : String,
